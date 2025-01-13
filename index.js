@@ -42,6 +42,11 @@ const registerValidation = [
 
 ];
 
+// Landing page
+app.get("/", (req, res)=>{
+  res.send("API up and running");
+})
+
 // Registration endpoint
 app.post('/api/register', registerValidation, async (req, res) => {
   try {
